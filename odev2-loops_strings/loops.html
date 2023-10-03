@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+// "Tech Career" metnini tersten yazdır:
+
+const str = "tech career";
+console.log("tech career");
+let reversedStr = "";
+
+for (let i = str.length - 1; i >= 0; i--) {
+    reversedStr += str[i];
+}
+
+console.log("reversed: " + reversedStr);
+
+
+
+// var numbers = [-22, 5, 11, 78, -4, -250, 35, 56, 11, 24, 77, 11] bu dizideki SADECE poizitif sayıların toplamını ekrana yazdır:
+
+const numbers = [-22, 5, 11, 78, -4, -250, 35, 56, 11, 24, 77, 11] ; 
+const positiveNumbers = [] ; 
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 0) {
+        positiveNumbers.push(numbers[i]);
+    }
+        
+    }
+
+    console.log(positiveNumbers); 
+
+
+
+// var numbers = [-22, 5, 11, 78, -4, -250, 35, 56, 11, 24, 77, 11] bu dizideki en büyük sayı hangisidir?
+
+const numbers = [-22, 5, 11, 78, -4, -250, 35, 56, 11, 24, 77, 11] ;
+let maxNumber = inumbers[0];
+
+for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > maxNumber) {
+        maxNumber = numbers[i];
+    }
+}
+
+console.log(maxNumber); // bu kod çalıştırılırken 28. satırda önceden atanmış bir numbers olduğu için hata verebilir.
+
+
+
+//1-50 arası sayılar içinde 3’e veya 5’e tam bölünebilen sayıları ve kaç adet olduklarını console a yaz.
+    
+let count = 0; 
+for (let i = 1; i <= 50; i++) {
+  if (i % 3 === 0 || i % 5 === 0) {
+    console.log(i); 
+    count++; 
+  }
+}
+
+console.log("1-50 arası sayılarda 3'e veya 5'e tam bölünebilen " + count + " adet sayı bulundu.");
+
+    
+    
+    
+    </script>
+</body>
+</html>
